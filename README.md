@@ -17,14 +17,21 @@ Your shell should provide the following features.
 The command history will output:
 
 6 ps
+
 5 ls -l
+
 4 top
+
 3 cal
+
 2 who
+
 1 date
 
 Your program should support two techniques for retrieving commands from the command history:
+
 1. When the user enters !!, the most recent command in the history is executed. In the example below, ps will be performed.
+
 2. When the user enters a single ! followed by an integer N, the Nth command in the history is executed. If the user enters !3 in the above example, the cal command will be executed.
 
 Any command executed in this fashion should be echoed on the users screen. The command should also be placed in the history buffer as the next command. The program should also manage basic error handling. If there are no commands in the history, entering !! should result in a message No commands in history. If there is no command corresponding to the number entered with the single !, the program should output "No such command in history."
