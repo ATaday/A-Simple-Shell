@@ -10,6 +10,7 @@
 #include <signal.h>
 #include <limits.h>
 #include <errno.h>
+#include<bits/stdc++.h>
 
 #define CMD_HISTORY_SIZE 10 // en çok girilen 10 komut için size 10
 
